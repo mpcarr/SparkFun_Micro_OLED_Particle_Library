@@ -314,7 +314,7 @@ void MicroOLED::clear(uint8_t mode) {
 	}
 	else
 	{
-		memset(screenmemory,0,384);			// (64 x 48) / 8 = 384
+		memset(screenmemory,0,1024);			// (64 x 48) / 8 = 384
 		//display();
 	}
 }
@@ -336,7 +336,7 @@ void MicroOLED::clear(uint8_t mode, uint8_t c) {
 	}
 	else
 	{
-		memset(screenmemory,c,384);			// (64 x 48) / 8 = 384
+		memset(screenmemory,c,1024);			// (64 x 48) / 8 = 384
 		display();
 	}
 }
