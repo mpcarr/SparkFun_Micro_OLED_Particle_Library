@@ -209,7 +209,7 @@ void MicroOLED::begin() {
 	command(DISPLAYOFF);			// 0xAE
 
 	command(SETDISPLAYCLOCKDIV);	// 0xD5
-	command(0x80);					// the suggested ratio 0x80
+	command(0x160);					// the suggested ratio 0x80
 
 	command(SETMULTIPLEX);			// 0xA8
 	command(0x2F);
