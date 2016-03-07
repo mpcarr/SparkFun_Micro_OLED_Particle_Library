@@ -373,11 +373,11 @@ void MicroOLED::contrast(uint8_t contrast) {
 void MicroOLED::display(void) {
 	uint8_t i, j;
 
-	for (i=0; i<6; i++) {
+	for (i=0; i<8; i++) {
 		setPageAddress(i);
 		setColumnAddress(0);
-		for (j=0;j<0x40;j++) {
-			data(screenmemory[i*0x40+j]);
+		for (j=0;j<0x80;j++) {
+			data(screenmemory[i*0x80+j]);
 		}
 	}
 }
